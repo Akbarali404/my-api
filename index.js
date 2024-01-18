@@ -106,3 +106,7 @@ app.get("/api/users", async (req, res) => {
   const users = await User.find();
   res.status(200).send(users);
 });
+app.get("/", async (req, res) => {
+  const users = await User.find();
+  res.status(200).send(users);
+});
